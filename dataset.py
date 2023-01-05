@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 from torch.utils.data import Dataset
 import prepare_data
-from albumentations.torch.functional import img_to_tensor
+from albumentations.pytorch.functional import img_to_tensor
 
 
 class RoboticsDataset(Dataset):

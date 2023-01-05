@@ -10,7 +10,7 @@ import tqdm
 
 
 def cuda(x):
-    return x.cuda(async=True) if torch.cuda.is_available() else x
+    return x.cuda() if torch.cuda.is_available() else x
 
 
 def write_event(log, step, **data):
